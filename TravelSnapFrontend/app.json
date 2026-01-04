@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "TravelSnapFrontend",
+    "slug": "TravelSnapFrontend",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.yourname.travelsnap",
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you choose travel memories to upload.",
+          "cameraPermission": "The app accesses your camera to let you snap photos of your trip."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow TravelSnap to access your camera to take photos inside the app.",
+          "microphonePermission": "Allow TravelSnap to access your microphone for video diaries."
+        }
+      ]
+    ]
+  }
+}
